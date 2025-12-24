@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="hi" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- 🔥 Link Preview Settings 🔥 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Happy New Year 2026! 🥂">
+    <meta property="og:description" content="दोस्ती और नए साल का खास तोहफा! यहाँ क्लिक करें... ✨">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=800&auto=format&fit=crop">
+    
+    <title>New Year Wish for Friend</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- RESET --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #050505;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            padding-top: 50px; 
+            padding-bottom: 50px; /* Space for Ads */
+        }
+
+        /* --- BACKGROUND ANIMATION (Golden Particles) --- */
+        .particles {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: radial-gradient(circle, #ffd700 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.1; z-index: 0;
+            animation: moveBg 10s linear infinite;
+        }
+        @keyframes moveBg { 0% { background-position: 0 0; } 100% { background-position: 50px 50px; } }
+
+        /* --- AD CONTAINERS --- */
+        .ad-container {
+            position: fixed; left: 0; width: 100%; height: 50px;
+            background: #000; display: flex; justify-content: center; align-items: center;
+            z-index: 9999; transition: transform 0.3s ease;
+        }
+        .top-ad { top: 0; border-bottom: 1px solid #333; }
+        .bottom-ad { bottom: 0; border-top: 1px solid #333; }
+
+        /* Class to hide ad when keyboard is open */
+        .hide-ad { transform: translateY(100%); opacity: 0; }
+
+        /* --- MAIN CARD --- */
+        .card {
+            position: relative; z-index: 10;
+            width: 90%; max-width: 400px;
+            background: rgba(30, 30, 30, 0.7);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-radius: 25px;
+            overflow: hidden;
+            text-align: center;
+            
+            /* 🔥 NEW PREMIUM ANIMATION (Neon Glow) 🔥 */
+            border: 2px solid transparent;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+            animation: neonPulse 3s infinite alternate;
+        }
+
+        @keyframes neonPulse {
+            0% { box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700; border-color: #FFD700; transform: scale(1); }
+            100% { box-shadow: 0 0 20px #ff00de, 0 0 40px #ff00de; border-color: #ff00de; transform: scale(1.02); }
+        }
+
+        /* Image (Friends Hugging) */
+        .header-img {
+            width: 100%; height: 260px; object-fit: cover;
+            border-bottom: 3px solid #fff;
+            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        }
+
+        .content { padding: 20px; color: white; position: relative; margin-top: -30px; }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem; color: #FFD700;
+            text-shadow: 2px 2px 0px #000;
+            margin-bottom: 5px; line-height: 1;
+        }
+
+        .subtitle { color: #aaa; font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; }
+
+        .text-msg {
+            font-size: 1rem; line-height: 1.6; color: #eee;
+            margin-bottom: 20px; background: rgba(0,0,0,0.3);
+            padding: 15px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Signature */
+        .signature {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.8rem; color: #ff4b2b;
+            text-shadow: 0 0 10px rgba(255, 75, 43, 0.8);
+            display: block; animation: floatSig 3s ease-in-out infinite;
+        }
+        @keyframes floatSig { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+
+        /* Input & Buttons */
+        .input-group { margin-top: 10px; }
+        
+        input {
+            width: 100%; padding: 15px; border-radius: 50px; border: 2px solid #444;
+            background: rgba(255,255,255,0.1); color: white; text-align: center;
+            font-size: 1.1rem; outline: none; transition: 0.3s;
+        }
+        input:focus { border-color: #FFD700; background: rgba(0,0,0,0.8); }
+
+        .btn {
+            width: 100%; padding: 15px; border: none; border-radius: 50px;
+            font-size: 1.1rem; font-weight: bold; cursor: pointer;
+            display: flex; justify-content: center; align-items: center; gap: 10px;
+            margin-top: 15px; transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .btn-create { background: linear-gradient(45deg, #FFD700, #ffb347); color: #000; }
+        .btn-share { background: linear-gradient(45deg, #25D366, #128C7E); color: white; display: none; }
+        .btn-new { background: white; color: #000; display: none; }
+
+        /* Music Toggle */
+        .music-btn {
+            position: fixed; bottom: 80px; right: 20px; z-index: 100;
+            width: 45px; height: 45px; background: rgba(255,255,255,0.1); backdrop-filter: blur(5px);
+            border: 1px solid #FFD700; border-radius: 50%;
+            display: flex; justify-content: center; align-items: center; cursor: pointer;
+        }
+        .spin { animation: spin 4s linear infinite; }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+
+    </style>
+</head>
+<body>
+
+    <div class="particles"></div>
+
+    <!-- 🟢 TOP AD 🟢 -->
+    <div class="ad-container top-ad">
+        <script type="text/javascript">
+            atOptions = { 'key' : '2e685d258df5321a95bc8af707545317', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
+        </script>
+        <script type="text/javascript" src="https://www.highperformanceformat.com/2e685d258df5321a95bc8af707545317/invoke.js"></script>
+    </div>
+
+    <!-- Audio -->
+    <audio id="bg-audio" loop><source src="song.mp3" type="audio/mpeg"></audio>
+
+    <div class="card">
+        <!-- 🔥 New Image: Friends Hugging 🔥 -->
+        <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=800&auto=format&fit=crop" class="header-img" alt="Friends Hugging">
+        
+        <div class="content">
+            <h1>Happy New Year</h1>
+            <div class="subtitle">To My Best Friend</div>
+            
+            <div class="text-msg">
+                "दोस्ती का यह रिश्ता हमेशा बना रहे,<br>
+                तेरे जीवन में खुशियों का दीया जलता रहे!<br>
+                साल तो हर बार बदलता है मेरे दोस्त,<br>
+                बस हमारा यह याराना कभी न बदले!"
+                <br><br>
+                <strong>✨ Happy New Year 2026 ✨</strong>
+            </div>
+
+            <!-- Signature -->
+            <div id="sign-area" style="display:none;">
+                <small style="color:#aaa; font-size:0.8rem;">With Love From:</small>
+                <span class="signature" id="display-name">Rohit</span>
+            </div>
+
+            <!-- Input Area -->
+            <div id="create-sec" class="input-group">
+                <input type="text" id="nameInput" placeholder="अपना नाम लिखें..." autocomplete="off">
+                <button class="btn btn-create" onclick="generate()">
+                    <i class="fas fa-magic"></i> कार्ड बनाएँ
+                </button>
+            </div>
+
+            <!-- Buttons -->
+            <button class="btn btn-share" id="shareBtn" onclick="shareToWhatsApp()">
+                <i class="fab fa-whatsapp"></i> दोस्त को भेजें
+            </button>
+
+            <button class="btn btn-new" id="newBtn" onclick="makeNew()">
+                <i class="fas fa-plus-circle"></i> अपना खुद का कार्ड बनाएँ
+            </button>
+
+        </div>
+    </div>
+
+    <!-- Music Toggle -->
+    <div class="music-btn" onclick="toggleAudio()" id="musicIcon">
+        <i class="fas fa-music" style="color:#FFD700;"></i>
+    </div>
+
+    <!-- 🟢 BOTTOM AD (Will hide when typing) 🟢 -->
+    <div class="ad-container bottom-ad" id="bottomAd">
+        <script type="text/javascript">
+            atOptions = { 'key' : '2e685d258df5321a95bc8af707545317', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
+        </script>
+        <script type="text/javascript" src="https://www.highperformanceformat.com/2e685d258df5321a95bc8af707545317/invoke.js"></script>
+    </div>
+
+    <script>
+        // --- 1. KEYBOARD FIX (AD HIDE LOGIC) ---
+        const inputField = document.getElementById('nameInput');
+        const bottomAd = document.getElementById('bottomAd');
+
+        // जब कीबोर्ड खुले (Input पर क्लिक हो) तो Ad छुपा दो
+        inputField.addEventListener('focus', () => {
+            bottomAd.classList.add('hide-ad');
+        });
+
+        // जब कीबोर्ड बंद हो (Input से हटे) तो Ad दिखा दो
+        inputField.addEventListener('blur', () => {
+            bottomAd.classList.remove('hide-ad');
+        });
+
+
+        // --- 2. MAIN APP LOGIC ---
+        const audio = document.getElementById('bg-audio');
+        const mIcon = document.getElementById('musicIcon');
+        let isPlaying = false;
+        let myName = "";
+
+        window.onload = function() {
+            if (window.location.protocol === 'file:') {
+                alert("Ads देखने के लिए इसे GitHub/HopWeb पर Host करें!");
+            }
+
+            const params = new URLSearchParams(window.location.search);
+            const sender = params.get('n');
+
+            if(sender) {
+                // Viewer Mode
+                document.getElementById('create-sec').style.display = 'none';
+                document.getElementById('sign-area').style.display = 'block';
+                document.getElementById('display-name').innerText = decodeURIComponent(sender);
+                document.getElementById('newBtn').style.display = 'flex';
+            }
+
+            document.body.addEventListener('click', () => { if(!isPlaying) toggleAudio(); }, { once: true });
+        }
+
+        function generate() {
+            const name = document.getElementById('nameInput').value.trim();
+            if(!name) { alert("नाम लिखें!"); return; }
+            
+            myName = name;
+            
+            // Switch UI
+            document.getElementById('create-sec').style.display = 'none';
+            document.getElementById('sign-area').style.display = 'block';
+            document.getElementById('display-name').innerText = name;
+            document.getElementById('shareBtn').style.display = 'flex';
+            
+            // Focus hatne par ad wapis lane ke liye
+            inputField.blur();
+            
+            if(!isPlaying) toggleAudio();
+        }
+
+        async function shareToWhatsApp() {
+            const baseUrl = window.location.href.split('?')[0]; 
+            const finalLink = `${baseUrl}?n=${encodeURIComponent(myName)}`;
+            
+            const msg = `🥂 *Happy New Year 2026* 🥂\n\nमेरे प्यारे दोस्त,\n*${myName}* ने तुम्हारे लिए एक स्पेशल कार्ड भेजा है। ✨\n\nदेखने के लिए यहाँ क्लिक करो: 👇\n\n${finalLink}\n\n💖 Friendship Forever!`;
+
+            if (navigator.share) {
+                try { await navigator.share({ title: 'New Year Wish', text: msg }); } catch (err) {}
+            } else {
+                window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
+            }
+        }
+
+        function makeNew() {
+            window.location.href = window.location.href.split('?')[0];
+        }
+
+        function toggleAudio() {
+            if (isPlaying) {
+                audio.pause();
+                mIcon.classList.remove('spin');
+                mIcon.innerHTML = '<i class="fas fa-play" style="color:#FFD700;"></i>';
+            } else {
+                audio.play();
+                mIcon.classList.add('spin');
+                mIcon.innerHTML = '<i class="fas fa-pause" style="color:#FFD700;"></i>';
+            }
+            isPlaying = !isPlaying;
+        }
+    </script>
+</body>
+</html>
